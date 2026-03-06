@@ -1,0 +1,87 @@
+{
+  "name": "English",
+  "code": "en",
+  "replies": {
+    "greet": ["Hello {title}, I am S1. How can I help?", "Hi {title}, what can I do for you?"],
+    "name": ["My name is S1.", "I am S1, your personal assistant."],
+    "exit": ["Goodbye {title}.", "See you later!"],
+    "action_open": ["Okay {title}, opening {app}."],
+    "action_close": ["Closing {app} as requested."],
+    "action_confirm": ["Okay, {action} {app}."],
+    "unknown": ["Pardon? I didn't quite understand.", "Sorry, I'm not sure how to help with that."],
+    "ai_engine_not_ready": ["Sorry, my AI engine is not ready right now."],
+    "ai_services_unavailable": ["I'm sorry, my AI services are currently unavailable. Please try again later."],
+    "action_disabled_in_mode": ["Sorry, the action is disabled in {mode_name} mode."],
+    "memory_saved": ["Okay, I will remember that."],
+    "reminder_set": ["Okay, reminder set."],
+    "workflow_running": ["Activating {workflow_name} workflow."],
+    "memory_summary": ["Here is what I remember about you: {summary}"],
+    "forgot_last": ["Okay, I have forgotten the last fact."],
+    "nothing_to_forget": ["There was nothing to forget."],
+    "memory_cleared": ["I have cleared your memory as requested."]
+  },
+  "intents": {
+    "open_app": ["open", "start", "launch", "run app"],
+    "close_app": ["close", "stop", "exit", "terminate app"],
+    "restart_app": ["restart app"],
+    "minimize_app": ["minimize app", "minimize window"],
+    "maximize_app": ["maximize app", "maximize window"],
+    "switch_to_app": ["switch to", "focus on", "go to"],
+    
+    "shutdown_system": ["shutdown system", "turn off computer"],
+    "restart_system": ["restart system", "reboot computer"],
+    "sleep_system": ["sleep system", "put computer to sleep"],
+    "volume_up": ["volume up", "increase volume"],
+    "volume_down": ["volume down", "decrease volume"],
+    "mute_system": ["mute", "unmute", "toggle mute"],
+    "brightness_up": ["brightness up", "increase brightness"],
+    "brightness_down": ["brightness down", "decrease brightness"],
+    "wifi_on": ["turn on wifi", "enable wifi"],
+    "wifi_off": ["turn off wifi", "disable wifi"],
+
+    "open_file": ["open file"],
+    "delete_file": ["delete file", "remove file"],
+    "rename_file": ["rename file"],
+    "create_file": ["create file", "make a new file"],
+    "move_file": ["move file"],
+    "search_file": ["search for file", "find file"],
+    "open_folder": ["open folder", "show folder"],
+
+    "open_website": ["open website", "go to website"],
+    "google_search": ["google", "search google for", "google search"],
+    "youtube_search": ["youtube", "search youtube for", "youtube search"],
+    "open_gmail": ["open gmail", "check my email"],
+    "open_facebook": ["open facebook"],
+    "open_whatsapp_web": ["open whatsapp"],
+
+    "time": ["time"],
+    "date": ["date"],
+    "weather": ["weather"],
+    "set_reminder": ["remind me", "set reminder", "add reminder"],
+    "list_reminders": ["show reminders", "list reminders"],
+    "run_workflow": ["run workflow", "activate"],
+    "set_mode": ["set mode", "activate mode"],
+    "set_language": ["set language", "use language"],
+    "set_ai_mode": ["switch to online mode", "switch to offline mode", "enable smart mode", "set ai mode to"],
+    "get_memory_summary": ["what do you remember", "memory summary"],
+    "forget_last": ["forget that", "forget this"],
+    "clear_memory": ["clear my memory", "erase memory"]
+  },
+  "entities": {
+    "app": {
+      "chrome": ["chrome", "google chrome", "browser"],
+      "notepad": ["notepad", "editor"],
+      "calculator": ["calculator", "calc"]
+    },
+    "ai_mode": {
+      "online": ["online", "online mode"],
+      "offline": ["offline", "offline mode"],
+      "smart": ["smart", "smart mode"]
+    }
+  },
+  "keywords": {
+    "remember that": "save_fact",
+    "delete mode": "delete_mode",
+    "create user": "create_user"
+  }
+}
